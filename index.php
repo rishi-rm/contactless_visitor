@@ -233,7 +233,8 @@
     
     <?php
       // Generate QR code link to checkin.php
-      $url = "http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF'])."/checkin.php";
+      // $url = "http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF'])."/checkin.php";
+      $url = "http://192.168.1.10/visitor_management_2/checkin.php";
     ?>
     
     <div class="qr-container">

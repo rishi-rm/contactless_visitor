@@ -1,5 +1,6 @@
 <?php
 // checkin.php
+include 'db.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -291,7 +292,7 @@
       <p class="subtitle">Please fill in your details to register your visit</p>
     </div>
 
-    <form id="registrationForm" method="POST" action="process_checkin.php">
+  <form method="POST" action="process_checkin.php">
       <div class="form-group">
         <label for="name">Full Name <span class="required">*</span></label>
         <div class="input-wrapper">
