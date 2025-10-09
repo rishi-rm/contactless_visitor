@@ -11,7 +11,7 @@
   <div class="card">
     <h2>✅ Check-in Successful!</h2>
     <p>Thank you for registering your visit.</p>
-    <a href="index.php">← Go back to main page</a>
+    <a href="checkin.php">← Go back to main page</a>
   </div>
 </body>
 </html>
