@@ -172,6 +172,27 @@
       60% { transform: translateY(-3px); }
     }
 
+    .view-logs-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 12px 24px;
+      background: linear-gradient(45deg, #f48fb1, #ec4899);
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 15px rgba(236, 72, 153, 0.3);
+    }
+
+    .view-logs-btn:hover {
+      background: linear-gradient(45deg, #ec4899, #be185d);
+      box-shadow: 0 10px 25px rgba(190, 24, 93, 0.4);
+      transform: translateY(-2px);
+    }
+
     @media (max-width: 480px) {
       .container {
         padding: 2rem 1.5rem;
@@ -188,7 +209,6 @@
       }
     }
 
-    /* Floating particles animation */
     .particle {
       position: fixed;
       pointer-events: none;
@@ -208,7 +228,6 @@
   </style>
 </head>
 <body>
-  <!-- Floating particles for extra visual appeal -->
   <div class="particle" style="top: 20%; left: 10%; color: #f8bbd9; font-size: 1.5rem;">
     <i class="fas fa-circle"></i>
   </div>
@@ -232,8 +251,6 @@
     </p>
     
     <?php
-      // Generate QR code link to checkin.php
-      // $url = "http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF'])."/checkin.php";
       $url = "http://192.168.1.10/visitor_management_2/checkin.php";
     ?>
     
@@ -245,6 +262,11 @@
       <i class="fas fa-mobile-alt"></i>
       Point your camera here to scan
     </p>
+
+    <!-- View Logs Button -->
+    <a href="admin.php" class="view-logs-btn">
+      <i class="fas fa-database"></i> View Logs
+    </a>
   </div>
 </body>
 </html>
